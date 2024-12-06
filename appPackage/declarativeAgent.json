@@ -1,0 +1,43 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.2/schema.json",
+    "version": "v1.2",
+    "name": "Azure Agent",
+    "description": "Azure Agent uses the Microsoft online documentation to get answers to your Azure questions.",
+    "instructions": "$[file('instruction.txt')]",
+    "conversation_starters": [
+        {
+            "title": "Pricing",
+            "text": "How much does Azure DevOps cost?"
+        },
+        {
+            "title": "Architecture",
+            "text": "Describe an architecture for running SQL Server in a Virtual Machine."
+        },
+        {
+            "title": "Capability",
+            "text": "What are the key features of Azure Cosmos DB, and when would you recommend using it?"
+        },
+        {
+            "title": "Management",
+            "text": "Can you explain the process of setting up and managing Azure SQL Database?"
+        },
+        {
+            "title": "Security",
+            "text": "What are the best practices for securing Azure resources?"
+        },
+        {
+            "title": "Migration",
+            "text": "How do I migrate my on-premises SQL Server database to Azure SQL Database?"
+        }
+    ],
+    "capabilities": [
+        {
+            "name": "WebSearch",
+            "sites": [
+                {
+                    "url": "https://learn.microsoft.com/en-us/azure/"
+                }
+            ]
+        }
+    ]
+}
